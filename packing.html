@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TripMate - Packing Checklist</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>✈️ TripMate</h2>
+
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-trip.html">Create Trip</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="budget.html">Budget</a>
+        <a href="packing.html">Packing</a>
+
+    </nav>
+
+
+    <section>
+
+        <h1>🎒 Packing Checklist</h1>
+
+        <p>
+            Prepare everything you need for your trip.
+        </p>
+
+
+        <!-- PACKING SUMMARY -->
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+
+                <h3>📦 Total Items</h3>
+
+                <p id="totalPackingItems">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>✅ Packed</h3>
+
+                <p id="packedItems">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>⏳ Remaining</h3>
+
+                <p id="remainingItems">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>📊 Progress</h3>
+
+                <p id="packingProgress">
+                    0%
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <br><br>
+
+
+        <!-- ADD ITEM -->
+
+        <form id="packingForm">
+
+            <h2>Add Packing Item</h2>
+
+            <br>
+
+            <label>
+                Packing Item
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="packingItem"
+                placeholder="Example: Clothes"
+            >
+
+            <br><br>
+
+            <button type="submit">
+                Add Item 🎒
+            </button>
+
+        </form>
+
+
+        <br><br>
+
+
+        <!-- PACKING LIST -->
+
+        <h2>My Packing List</h2>
+
+        <div id="packingList">
+
+            <p>
+                No packing items added yet.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

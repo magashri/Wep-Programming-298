@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Budget</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        ✈️ TripMate
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="create-trip.html">Create Trip</a>
+
+        <a href="itinerary.html">Itinerary</a>
+
+        <a href="budget.html">Budget</a>
+
+        <a href="packing.html">Packing</a>
+
+        <a href="hotel.html">Hotel</a>
+
+        <a href="transport.html">Transport</a>
+
+        <a href="booking.html">Bookings</a>
+
+        <a href="pre-trip.html">Pre-Trip</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="container">
+
+
+    <!-- PAGE TITLE -->
+
+    <section class="page-title">
+
+        <h1>💰 Trip Budget</h1>
+
+        <p>
+            Track your expenses and manage your trip budget.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= BUDGET SUMMARY ================= -->
+
+    <section class="budget-summary">
+
+
+        <div class="budget-card">
+
+            <h3>Total Budget</h3>
+
+            <div
+                class="amount"
+                id="budgetAmount">
+                ₹0
+            </div>
+
+        </div>
+
+
+
+        <div class="budget-card">
+
+            <h3>Total Expenses</h3>
+
+            <div
+                class="amount"
+                id="expenseAmount">
+                ₹0
+            </div>
+
+        </div>
+
+
+
+        <div class="budget-card">
+
+            <h3>Remaining Budget</h3>
+
+            <div
+                class="amount"
+                id="remainingBudget">
+                ₹0
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= BUDGET PROGRESS ================= -->
+
+    <div class="card">
+
+
+        <h2>Budget Usage</h2>
+
+
+        <div class="progress-container">
+
+            <div
+                id="budgetProgress"
+                class="progress-bar">
+            </div>
+
+        </div>
+
+
+        <p
+            id="budgetPercentage"
+            style="margin-top:10px;">
+            0% used
+        </p>
+
+
+    </div>
+
+
+
+    <!-- ================= ADD EXPENSE ================= -->
+
+    <div class="form-card">
+
+
+        <h2>➕ Add Expense</h2>
+
+
+        <br>
+
+
+        <form id="expenseForm">
+
+
+            <div class="form-group">
+
+                <label for="expenseName">
+                    Expense Name
+                </label>
+
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="Example: Hotel"
+                    required>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="expenseAmountInput">
+                    Amount
+                </label>
+
+                <input
+                    type="number"
+                    id="expenseAmountInput"
+                    placeholder="Enter amount"
+                    min="1"
+                    required>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="create-btn">
+
+                ➕ Add Expense
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+
+
+    <!-- ================= EXPENSE LIST ================= -->
+
+    <div class="card">
+
+
+        <h2>💸 Your Expenses</h2>
+
+
+        <div
+            id="expenseList"
+            class="expense-list">
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ================= GRAPH ================= -->
+
+    <div class="chart-card">
+
+
+        <h2>📊 Expense Graph</h2>
+
+
+        <div class="chart-container">
+
+            <canvas id="expenseChart"></canvas>
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        ✈️ TripMate — Plan. Travel. Enjoy.
+    </p>
+
+</footer>
+
+
+
+<!-- IMPORTANT:
+     Chart.js MUST be loaded BEFORE script.js
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Booking Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>✈️ TripMate</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-trip.html">Create Trip</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="packing.html">Packing</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="transport.html">Transport</a>
+            <a href="booking.html">Bookings</a>
+            <a href="my-trips.html">My Trips</a>
+        </div>
+    </nav>
+
+
+    <section>
+
+        <h1>🎫 Booking Manager</h1>
+
+        <p>
+            Manage your hotel, transport and activity bookings.
+        </p>
+
+
+        <!-- Add Booking -->
+        <div class="card">
+
+            <h2>➕ Add Booking</h2>
+
+            <br>
+
+            <form id="bookingForm">
+
+                <label>Booking Name</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="bookingName"
+                    placeholder="Example: Ooty Hotel"
+                >
+
+                <br><br>
+
+
+                <label>Booking Type</label>
+                <br>
+
+                <select id="bookingType">
+
+                    <option value="">
+                        Select Type
+                    </option>
+
+                    <option value="Hotel">
+                        🏨 Hotel
+                    </option>
+
+                    <option value="Transport">
+                        🚆 Transport
+                    </option>
+
+                    <option value="Activity">
+                        🎡 Activity
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Booking Date</label>
+                <br>
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                >
+
+                <br><br>
+
+
+                <label>Booking Reference</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="bookingReference"
+                    placeholder="Example: BK12345"
+                >
+
+                <br><br>
+
+
+                <label>Booking Status</label>
+                <br>
+
+                <select id="bookingStatus">
+
+                    <option value="Confirmed">
+                        ✅ Confirmed
+                    </option>
+
+                    <option value="Pending">
+                        ⏳ Pending
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <button type="submit">
+                    💾 Add Booking
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Booking List -->
+        <div class="card">
+
+            <h2>🎫 My Bookings</h2>
+
+            <br>
+
+            <div id="bookingList">
+
+                <p>No bookings added yet.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

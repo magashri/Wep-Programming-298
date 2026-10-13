@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Hotel Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>✈️ TripMate</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-trip.html">Create Trip</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="packing.html">Packing</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="my-trips.html">My Trips</a>
+        </div>
+    </nav>
+
+
+    <section>
+
+        <h1>🏨 Hotel Details</h1>
+
+        <p>
+            Add and manage your hotel information for your trip.
+        </p>
+
+
+        <!-- Hotel Form -->
+        <div class="card">
+
+            <h2>🏨 Add Hotel</h2>
+
+            <br>
+
+            <form id="hotelForm">
+
+                <!-- Hotel Name -->
+                <label>Hotel Name</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="hotelName"
+                    placeholder="Example: Hotel Blue Hills"
+                >
+
+                <br><br>
+
+
+                <!-- Hotel Address -->
+                <label>Hotel Address</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="hotelAddress"
+                    placeholder="Example: Ooty, Tamil Nadu"
+                >
+
+                <br><br>
+
+
+                <!-- Check-in -->
+                <label>Check-in Date</label>
+                <br>
+
+                <input
+                    type="date"
+                    id="checkIn"
+                >
+
+                <br><br>
+
+
+                <!-- Check-out -->
+                <label>Check-out Date</label>
+                <br>
+
+                <input
+                    type="date"
+                    id="checkOut"
+                >
+
+                <br><br>
+
+
+                <!-- Booking Reference -->
+                <label>Booking Reference</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="bookingReference"
+                    placeholder="Example: HTL12345"
+                >
+
+                <br><br>
+
+
+                <button type="submit">
+                    💾 Save Hotel
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Saved Hotel -->
+        <div class="card">
+
+            <h2>🏨 My Hotel</h2>
+
+            <br>
+
+            <div id="hotelDetails">
+
+                <p>No hotel details added yet.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Transport Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>✈️ TripMate</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-trip.html">Create Trip</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="packing.html">Packing</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="transport.html">Transport</a>
+            <a href="my-trips.html">My Trips</a>
+        </div>
+    </nav>
+
+    <section>
+
+        <h1>🚆 Transport Details</h1>
+
+        <p>
+            Add and manage your travel transportation details.
+        </p>
+
+        <!-- Transport Form -->
+        <div class="card">
+
+            <h2>🚆 Add Transport</h2>
+
+            <br>
+
+            <form id="transportForm">
+
+                <label>Transport Type</label>
+                <br>
+
+                <select id="transportType">
+
+                    <option value="">Select Transport</option>
+                    <option value="Train">🚆 Train</option>
+                    <option value="Bus">🚌 Bus</option>
+                    <option value="Flight">✈️ Flight</option>
+                    <option value="Car">🚗 Car</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Departure Location</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="departureLocation"
+                    placeholder="Example: Chennai"
+                >
+
+                <br><br>
+
+
+                <label>Arrival Location</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="arrivalLocation"
+                    placeholder="Example: Ooty"
+                >
+
+                <br><br>
+
+
+                <label>Departure Date</label>
+                <br>
+
+                <input
+                    type="date"
+                    id="departureDate"
+                >
+
+                <br><br>
+
+
+                <label>Departure Time</label>
+                <br>
+
+                <input
+                    type="time"
+                    id="departureTime"
+                >
+
+                <br><br>
+
+
+                <label>Arrival Date</label>
+                <br>
+
+                <input
+                    type="date"
+                    id="arrivalDate"
+                >
+
+                <br><br>
+
+
+                <label>Arrival Time</label>
+                <br>
+
+                <input
+                    type="time"
+                    id="arrivalTime"
+                >
+
+                <br><br>
+
+
+                <label>Ticket / Reference Number</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="ticketReference"
+                    placeholder="Example: TRN12345"
+                >
+
+                <br><br>
+
+                <button type="submit">
+                    💾 Save Transport
+                </button>
+
+            </form>
+
+        </div>
+
+        <br>
+
+
+        <!-- Saved Transport -->
+        <div class="card">
+
+            <h2>🚆 My Transport</h2>
+
+            <br>
+
+            <div id="transportDetails">
+
+                <p>No transport details added yet.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

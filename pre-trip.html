@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Pre-Trip Checklist</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>✈️ TripMate</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-trip.html">Create Trip</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="packing.html">Packing</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="transport.html">Transport</a>
+            <a href="booking.html">Bookings</a>
+            <a href="pre-trip.html">Pre-Trip</a>
+            <a href="my-trips.html">My Trips</a>
+        </div>
+    </nav>
+
+
+    <section>
+
+        <h1>📋 Pre-Trip Checklist</h1>
+
+        <p>
+            Complete these tasks before starting your trip.
+        </p>
+
+
+        <!-- Add Checklist Item -->
+        <div class="card">
+
+            <h2>➕ Add Task</h2>
+
+            <br>
+
+            <form id="preTripForm">
+
+                <label>Task</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="preTripTask"
+                    placeholder="Example: Book hotel"
+                >
+
+                <br><br>
+
+                <button type="submit">
+                    ➕ Add Task
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Progress -->
+        <div class="card">
+
+            <h2>📊 Checklist Progress</h2>
+
+            <br>
+
+            <div class="trip-progress-bar">
+
+                <div
+                    id="preTripProgress"
+                    class="trip-progress-fill"
+                    style="width: 0%;"
+                ></div>
+
+            </div>
+
+            <br>
+
+            <p id="preTripPercentage">
+                0% completed
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Checklist -->
+        <div class="card">
+
+            <h2>📋 My Pre-Trip Tasks</h2>
+
+            <br>
+
+            <div id="preTripList">
+
+                <p>No tasks added yet.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

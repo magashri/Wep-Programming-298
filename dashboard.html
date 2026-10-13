@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMate - Dashboard</title>
+
+    <!-- THIS MUST EXIST -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>✈️ TripMate</h2>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="create-trip.html">Create Trip</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="budget.html">Budget</a>
+        <a href="packing.html">Packing</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="transport.html">Transport</a>
+        <a href="booking.html">Bookings</a>
+        <a href="pre-trip.html">Pre-Trip</a>
+        <a href="my-trips.html">My Trips</a>
+
+    </div>
+
+</nav>
+
+
+<main class="dashboard-container">
+
+
+    <!-- HEADER -->
+
+    <div class="dashboard-header">
+
+        <p class="eyebrow">
+            YOUR TRAVEL COMMAND CENTER
+        </p>
+
+        <h1>
+            Welcome to Your Trip Dashboard 🌍
+        </h1>
+
+        <p>
+            Manage your complete journey from one place.
+        </p>
+
+    </div>
+
+
+    <!-- CURRENT TRIP -->
+
+    <section class="card">
+
+        <h2>📍 Current Trip</h2>
+
+        <div class="dashboard-cards">
+
+            <div class="info-card">
+                <span>Destination</span>
+                <strong id="dashboardDestination">Not Set</strong>
+            </div>
+
+            <div class="info-card">
+                <span>Start Date</span>
+                <strong id="dashboardStartDate">Not Set</strong>
+            </div>
+
+            <div class="info-card">
+                <span>End Date</span>
+                <strong id="dashboardEndDate">Not Set</strong>
+            </div>
+
+            <div class="info-card">
+                <span>Total Budget</span>
+                <strong id="dashboardBudget">₹0</strong>
+            </div>
+
+            <div class="info-card">
+                <span>Remaining Budget</span>
+                <strong id="dashboardRemainingBudget">₹0</strong>
+            </div>
+
+            <div class="info-card">
+                <span>Travel Type</span>
+                <strong id="dashboardTravelType">Not Set</strong>
+            </div>
+
+            <div class="info-card">
+                <span>Trip Status</span>
+                <strong id="tripStatus">No Trip</strong>
+            </div>
+
+            <div class="info-card">
+                <span>My Trip</span>
+                <strong id="myTrip">No trip created</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+
+    <section class="card countdown-card">
+
+        <div class="countdown-icon">⏳</div>
+
+        <h2>Trip Countdown</h2>
+
+        <p id="tripCountdown">
+            Create a trip to see the countdown.
+        </p>
+
+    </section>
+
+
+    <!-- ITINERARY -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>📅 Itinerary Summary</h2>
+
+                <p>
+                    Keep track of your planned activities.
+                </p>
+            </div>
+
+            <a href="itinerary.html" class="action-button">
+                Manage Itinerary →
+            </a>
+
+        </div>
+
+        <div id="dashboardActivities">
+            <p>0 activities planned</p>
+        </div>
+
+    </section>
+
+
+    <!-- PACKING -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>🎒 Packing Summary</h2>
+
+                <p>
+                    Make sure everything is ready.
+                </p>
+            </div>
+
+            <a href="packing.html" class="action-button">
+                Manage Packing →
+            </a>
+
+        </div>
+
+        <div id="dashboardPacking">
+            <p>No packing items added yet.</p>
+        </div>
+
+    </section>
+
+
+    <!-- HOTEL -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>🏨 Hotel</h2>
+
+                <p>
+                    View your saved hotel information.
+                </p>
+            </div>
+
+            <a href="hotel.html" class="action-button">
+                Manage Hotel →
+            </a>
+
+        </div>
+
+        <div id="dashboardHotel">
+            <p>No hotel added yet.</p>
+        </div>
+
+    </section>
+
+
+    <!-- TRANSPORT -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>🚗 Transport</h2>
+
+                <p>
+                    View your travel and transport details.
+                </p>
+            </div>
+
+            <a href="transport.html" class="action-button">
+                Manage Transport →
+            </a>
+
+        </div>
+
+        <div id="dashboardTransport">
+            <p>No transport details added yet.</p>
+        </div>
+
+    </section>
+
+
+    <!-- BOOKINGS -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>🎫 Bookings</h2>
+
+                <p>
+                    Keep track of your important bookings.
+                </p>
+            </div>
+
+            <a href="booking.html" class="action-button">
+                Manage Bookings →
+            </a>
+
+        </div>
+
+        <div id="dashboardBookings">
+            <p>No bookings added yet.</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRE-TRIP -->
+
+    <section class="card">
+
+        <div class="section-heading-row">
+
+            <div>
+                <h2>✅ Pre-Trip Tasks</h2>
+
+                <p>
+                    Complete important tasks before travelling.
+                </p>
+            </div>
+
+            <a href="pre-trip.html" class="action-button">
+                Manage Pre-Trip →
+            </a>
+
+        </div>
+
+        <div id="dashboardPreTrip">
+            <p>No pre-trip tasks added yet.</p>
+        </div>
+
+    </section>
+
+
+    <!-- NOTES -->
+
+    <section class="card notes-card">
+
+        <h2>📝 Trip Notes</h2>
+
+        <p>
+            Save important notes and reminders for your journey.
+        </p>
+
+        <textarea
+            id="tripNotes"
+            rows="7"
+            placeholder="Write your travel notes here..."></textarea>
+
+        <button onclick="saveTripNotes()">
+            Save Notes 💾
+        </button>
+
+        <p id="notesStatus" class="notes-status"></p>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="card">
+
+        <h2>📊 Trip Statistics</h2>
+
+        <div class="statistics-grid">
+
+            <div class="stat-box">
+
+                <div class="stat-icon">📅</div>
+
+                <h4>Total Activities</h4>
+
+                <p id="statActivities">0</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">💸</div>
+
+                <h4>Total Expenses</h4>
+
+                <p id="statExpenses">₹0</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">🎒</div>
+
+                <h4>Packing Progress</h4>
+
+                <p id="statPacking">0%</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">💰</div>
+
+                <h4>Budget Used</h4>
+
+                <p id="statBudget">0%</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPENSE GRAPH -->
+
+    <section class="card graph-card">
+
+        <div class="section-heading-row">
+
+            <div>
+
+                <h2>📈 Expense Overview</h2>
+
+                <p>
+                    Visualize where your trip money is being spent.
+                </p>
+
+            </div>
+
+            <a href="budget.html" class="action-button">
+                Manage Budget →
+            </a>
+
+        </div>
+
+
+        <div class="chart-container">
+
+            <canvas id="expenseChart"></canvas>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+
+    <section class="card">
+
+        <h2>🚀 Trip Progress Overview</h2>
+
+        <div class="progress-header">
+
+            <span>Overall Trip Planning</span>
+
+            <span id="tripProgressText">0%</span>
+
+        </div>
+
+
+        <div class="trip-progress-bar">
+
+            <div
+                id="tripProgressBar"
+                class="trip-progress-fill">
+            </div>
+
+        </div>
+
+
+        <p id="tripProgressMessage">
+            Start planning your trip! ✈️
+        </p>
+
+    </section>
+
+
+    <!-- READINESS -->
+
+    <section class="card">
+
+        <h2>✅ Trip Readiness Checklist</h2>
+
+        <div class="readiness-list">
+
+            <div class="readiness-item">
+
+                <div>
+                    <strong>📍 Trip Details</strong>
+
+                    <p>
+                        Destination, start date and end date
+                    </p>
+                </div>
+
+                <span id="readinessDetails">
+                    ⏳ Pending
+                </span>
+
+            </div>
+
+
+            <div class="readiness-item">
+
+                <div>
+                    <strong>📅 Itinerary</strong>
+
+                    <p>
+                        Add at least one activity
+                    </p>
+                </div>
+
+                <span id="readinessItinerary">
+                    ⏳ Pending
+                </span>
+
+            </div>
+
+
+            <div class="readiness-item">
+
+                <div>
+                    <strong>💰 Budget</strong>
+
+                    <p>
+                        Set your total trip budget
+                    </p>
+                </div>
+
+                <span id="readinessBudget">
+                    ⏳ Pending
+                </span>
+
+            </div>
+
+
+            <div class="readiness-item">
+
+                <div>
+                    <strong>🎒 Packing List</strong>
+
+                    <p>
+                        Add items to your packing list
+                    </p>
+                </div>
+
+                <span id="readinessPacking">
+                    ⏳ Pending
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="card quick-actions">
+
+        <h2>⚡ Quick Actions</h2>
+
+        <div class="quick-action-buttons">
+
+            <a
+                href="create-trip.html"
+                class="primary-button">
+                ✈️ Create New Trip
+            </a>
+
+            <a
+                href="budget.html"
+                class="primary-button">
+                💰 Manage Budget
+            </a>
+
+            <a
+                href="itinerary.html"
+                class="primary-button">
+                📅 Manage Itinerary
+            </a>
+
+            <a
+                href="packing.html"
+                class="primary-button">
+                🎒 Manage Packing
+            </a>
+
+            <button
+                onclick="clearTrip()"
+                class="danger-button">
+                🗑️ Clear Trip
+            </button>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- Chart.js FIRST -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Your JS SECOND -->
+<script src="./js/script.js"></script>
+
+</body>
+
+</html>

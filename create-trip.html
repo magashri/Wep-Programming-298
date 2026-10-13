@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Trip - TripMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        ✈️ TripMate
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-trip.html">Create Trip</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="budget.html">Budget</a>
+        <a href="packing.html">Packing</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="transport.html">Transport</a>
+        <a href="booking.html">Bookings</a>
+        <a href="pre-trip.html">Pre-Trip</a>
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <div class="page-title">
+        <h1>✈️ Create Your Trip</h1>
+        <p>Plan your trip by adding your destination, dates and budget.</p>
+    </div>
+
+
+    <div class="form-card">
+
+        <form id="createTripForm">
+
+            <div class="form-group">
+
+                <label>📍 Destination</label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="Enter destination"
+                    required
+                >
+
+            </div>
+
+
+            <div class="two-column">
+
+                <div class="form-group">
+
+                    <label>📅 Start Date</label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>📅 End Date</label>
+
+                    <input
+                        type="date"
+                        id="endDate"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>💰 Budget</label>
+
+                <input
+                    type="number"
+                    id="budget"
+                    placeholder="Enter your budget"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>🚗 Travel Type</label>
+
+                <select id="travelType">
+
+                    <option value="Solo">Solo</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Family">Family</option>
+                    <option value="Friends">Friends</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit" class="create-btn">
+                ✈️ Create Trip
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

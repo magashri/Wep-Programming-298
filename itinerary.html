@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TripMate - Itinerary</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>✈️ TripMate</h2>
+
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-trip.html">Create Trip</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="budget.html">Budget</a>
+        <a href="packing.html">Packing</a>
+
+    </nav>
+
+
+    <section>
+
+        <h1>📅 My Itinerary</h1>
+
+        <p>
+            Plan your daily travel activities.
+        </p>
+
+
+        <!-- Add Activity -->
+
+        <form id="itineraryForm">
+
+            <label>Day</label>
+
+            <br>
+
+            <input
+                type="text"
+                id="day"
+                placeholder="Example: Day 1"
+            >
+
+            <br><br>
+
+
+            <label>Activity</label>
+
+            <br>
+
+            <input
+                type="text"
+                id="activity"
+                placeholder="Example: Visit Ooty Lake"
+            >
+
+            <br><br>
+
+
+            <label>Time</label>
+
+            <br>
+
+            <input
+                type="time"
+                id="activityTime"
+            >
+
+            <br><br>
+
+
+            <button type="submit">
+                Add Activity 📅
+            </button>
+
+        </form>
+
+
+        <br>
+
+
+        <!-- Itinerary List -->
+
+        <h2>My Activities</h2>
+
+        <div id="itineraryList">
+
+            <p>
+                No activities added yet.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
